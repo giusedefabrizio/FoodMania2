@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: C8ADAD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foodmania.Mainmenu">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d08f8f" height="103.0" layoutX="-1.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1286.0">
+            <effect>
+                <DropShadow offsetX="-3.0" />
+            </effect>
+        </Rectangle>
+        <Text fill="#010f4c" layoutX="97.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOODMANIA" wrappingWidth="257.24803161621094">
+            <font>
+                <Font name="Broadway" size="37.0" />
+            </font>
+        </Text>
+        <Circle fill="#b13610" layoutX="48.0" layoutY="52.0" radius="32.0" stroke="BLACK">
+            <effect>
+                <DropShadow height="7.79" offsetY="1.0" radius="1.4475" width="0.0" />
+            </effect>
+        </Circle>
+        <FontIcon iconLiteral="icm-spoon-knife" iconSize="40" layoutX="29.0" layoutY="69.0" />
+        <Button fx:id="backButton" layoutX="388.0" layoutY="23.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="83.0" styleClass="RedButton" stylesheets="@RedButton.css">
+            <effect>
+                <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
+            </effect>
+            <graphic>
+                <FontIcon iconLiteral="icm-arrow-left" iconSize="45" />
+            </graphic>
+        </Button>
+      <Pane layoutX="374.0" layoutY="185.0" prefHeight="479.0" prefWidth="550.0" style="-fx-background-color: #d08f8f; -fx-background-radius: 15px;">
+         <effect>
+            <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.5964912176132202" green="0.5228503346443176" blue="0.5228503346443176" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <VBox layoutX="3.0" layoutY="4.0" prefHeight="477.0" prefWidth="544.0" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email or username">
+                     <font>
+                        <Font name="Perpetua Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="326.0" style="-fx-border-color: black;">
+                     <effect>
+                        <DropShadow height="1.0" offsetY="1.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.5254902243614197" green="0.49803921580314636" blue="0.49803921580314636" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <font>
+                        <Font name="Perpetua Bold" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <PasswordField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="326.0" style="-fx-border-color: black;">
+                     <effect>
+                        <DropShadow height="1.0" offsetY="1.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.5254902243614197" green="0.49803921580314636" blue="0.49803921580314636" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </PasswordField>
+                  <HBox prefHeight="44.0" prefWidth="529.0" spacing="10.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot your password?">
+                           <font>
+                              <Font name="Perpetua" size="28.0" />
+                           </font>
+                        </Text>
+                        <Hyperlink fx:id="clickText" prefHeight="25.0" prefWidth="118.0" text="Click Here" textFill="#506aff" underline="true">
+                           <font>
+                              <Font name="Perpetua" size="21.0" />
+                           </font>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="214.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="Login">
+                     <font>
+                        <Font name="Perpetua" size="39.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="1.0" offsetY="3.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.45490196347236633" green="0.3843137323856354" blue="0.3843137323856354" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <VBox.margin>
+                        <Insets left="140.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="15.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+      <Text layoutX="379.0" layoutY="708.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you not an account?" wrappingWidth="289.69232177734375" AnchorPane.leftAnchor="379.0">
+         <font>
+            <Font name="Perpetua" size="28.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="registerText" layoutX="641.0" layoutY="675.0" prefHeight="25.0" prefWidth="118.0" text="Register" textFill="#506aff" underline="true">
+         <font>
+            <Font name="Perpetua" size="29.0" />
+         </font>
+      </Hyperlink>
+      <Text layoutX="578.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font name="Perpetua Bold" size="49.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

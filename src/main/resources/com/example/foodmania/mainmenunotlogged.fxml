@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: C8ADAD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foodmania.Mainmenu">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d08f8f" height="103.0" layoutX="-1.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1286.0">
+         <effect>
+            <DropShadow offsetX="-3.0" />
+         </effect>
+      </Rectangle>
+      <Text fill="#010f4c" layoutX="97.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOODMANIA" wrappingWidth="257.24803161621094">
+         <font>
+            <Font name="Broadway" size="37.0" />
+         </font>
+      </Text>
+      <Circle fill="#b13610" layoutX="48.0" layoutY="52.0" radius="32.0" stroke="BLACK">
+         <effect>
+            <DropShadow height="7.79" offsetY="1.0" radius="1.4475" width="0.0" />
+         </effect>
+      </Circle>
+      <FontIcon iconLiteral="icm-spoon-knife" iconSize="40" layoutX="29.0" layoutY="69.0" />
+      <Button fx:id="backButton" layoutX="388.0" layoutY="23.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="83.0" styleClass="RedButton" stylesheets="@RedButton.css">
+         <effect>
+            <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
+         </effect>
+         <graphic>
+            <FontIcon iconLiteral="icm-arrow-left" iconSize="45" />
+         </graphic>
+      </Button>
+      <HBox layoutX="875.0" layoutY="12.0" prefHeight="100.0" prefWidth="387.0" spacing="15.0">
+         <children>
+            <Button fx:id="loginButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" styleClass="RedButton" stylesheets="@RedButton.css" text="Login">
+               <effect>
+                  <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
+               </effect>
+               <font>
+                  <Font name="Perpetua Bold" size="38.0" />
+               </font>
+            </Button>
+            <Button fx:id="registerButton" mnemonicParsing="false" prefHeight="73.0" prefWidth="225.0" styleClass="RedButton" stylesheets="@RedButton.css" text="Register">
+               <effect>
+                  <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
+               </effect>
+               <font>
+                  <Font name="Perpetua Bold" size="38.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <ImageView fitHeight="334.0" fitWidth="181.0" layoutX="207.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../UI images/fork.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="restaurantsButton" layoutX="152.0" layoutY="502.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="291.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="The restaurants">
+         <font>
+            <Font name="Perpetua" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow height="1.0" offsetY="3.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.45490196347236633" green="0.3843137323856354" blue="0.3843137323856354" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="334.0" fitWidth="181.0" layoutX="944.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../UI images/spoon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="valutatedButton" layoutX="878.0" layoutY="501.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="291.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="Most valutated">
+         <font>
+            <Font name="Perpetua" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow height="1.0" offsetY="3.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.45490196347236633" green="0.3843137323856354" blue="0.3843137323856354" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="327.0" fitWidth="387.0" layoutX="492.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../UI images/plate.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="nearestButton" layoutX="508.0" layoutY="500.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="291.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="Nearest to you">
+         <font>
+            <Font name="Perpetua" size="38.0" />
+         </font>
+         <effect>
+            <DropShadow height="1.0" offsetY="3.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.45490196347236633" green="0.3843137323856354" blue="0.3843137323856354" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Text layoutX="553.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+         <font>
+            <Font name="Perpetua Bold" size="49.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
