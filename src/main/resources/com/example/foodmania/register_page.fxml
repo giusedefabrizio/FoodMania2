@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: C8ADAD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d08f8f" height="103.0" layoutX="-1.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1286.0">
+         <effect>
+            <DropShadow offsetX="-3.0" />
+         </effect>
+      </Rectangle>
+      <Text fill="#010f4c" layoutX="97.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOODMANIA" wrappingWidth="257.24803161621094">
+         <font>
+            <Font name="Broadway" size="37.0" />
+         </font>
+      </Text>
+      <Circle fill="#b13610" layoutX="48.0" layoutY="52.0" radius="32.0" stroke="BLACK">
+         <effect>
+            <DropShadow height="7.79" offsetY="1.0" radius="1.4475" width="0.0" />
+         </effect>
+      </Circle>
+      <FontIcon iconLiteral="icm-spoon-knife" iconSize="40" layoutX="29.0" layoutY="69.0" />
+      <Button fx:id="backButton" layoutX="388.0" layoutY="23.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="83.0" styleClass="RedButton" stylesheets="@RedButton.css">
+         <effect>
+            <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
+         </effect>
+         <graphic>
+            <FontIcon iconLiteral="icm-arrow-left" iconSize="45" />
+         </graphic>
+      </Button>
+      <Text layoutX="550.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font name="Perpetua Bold" size="49.0" />
+         </font>
+      </Text>
+      <Text layoutX="49.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A customer?" wrappingWidth="433.38372802734375">
+         <font>
+            <Font name="Perpetua Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="51.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register to make a review or order your favourite dishes" wrappingWidth="433.38372802734375">
+         <font>
+            <Font name="Perpetua" size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A restaurant owner?" wrappingWidth="433.38372802734375">
+         <font>
+            <Font name="Perpetua Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="40.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register to add it to your catalogue" wrappingWidth="433.38372802734375">
+         <font>
+            <Font name="Perpetua" size="31.0" />
+         </font>
+      </Text>
+      <Pane layoutX="500.0" layoutY="156.0" prefHeight="573.0" prefWidth="729.0" style="-fx-background-color: #d08f8f; -fx-background-radius: 15px;">
+         <effect>
+            <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="0.5964912176132202" green="0.5228503346443176" blue="0.5228503346443176" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <VBox layoutX="3.0" layoutY="4.0" prefHeight="571.0" prefWidth="359.0" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                     <font>
+                        <Font name="Perpetua Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="326.0" style="-fx-border-color: black;">
+                     <effect>
+                        <DropShadow height="1.0" offsetY="1.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.5254902243614197" green="0.49803921580314636" blue="0.49803921580314636" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <font>
+                        <Font name="Perpetua Bold" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <PasswordField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="326.0" style="-fx-border-color: black;">
+                     <effect>
+                        <DropShadow height="1.0" offsetY="1.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.5254902243614197" green="0.49803921580314636" blue="0.49803921580314636" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </PasswordField>
+                  <Text fill="#534a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Password must contain at least 8 characters, including at least one number and one special symbol" wrappingWidth="331.161376953125">
+                     <font>
+                        <Font name="Perpetua" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="15.0" top="20.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="365.0" layoutY="4.0" prefHeight="571.0" prefWidth="359.0" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                     <font>
+                        <Font name="Perpetua Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="326.0" style="-fx-border-color: black;">
+                     <effect>
+                        <DropShadow height="1.0" offsetY="1.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.5254902243614197" green="0.49803921580314636" blue="0.49803921580314636" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm password">
+                     <font>
+                        <Font name="Perpetua Bold" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <PasswordField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="326.0" style="-fx-border-color: black;">
+                     <effect>
+                        <DropShadow height="1.0" offsetY="1.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.5254902243614197" green="0.49803921580314636" blue="0.49803921580314636" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </PasswordField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User type">
+                     <font>
+                        <Font name="Perpetua Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <HBox layoutX="-3.0" prefHeight="47.0" prefWidth="360.0" spacing="20.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="Customer" textOverrun="CLIP">
+                           <font>
+                              <Font name="Perpetua" size="28.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox mnemonicParsing="false" text="Owner" textOverrun="CLIP">
+                           <font>
+                              <Font name="Perpetua" size="28.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="15.0" top="20.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" layoutY="379.0" prefHeight="180.0" prefWidth="731.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="214.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="Register" textAlignment="CENTER">
+                     <font>
+                        <Font name="Perpetua" size="39.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="1.0" offsetY="3.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="0.45490196347236633" green="0.3843137323856354" blue="0.3843137323856354" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
