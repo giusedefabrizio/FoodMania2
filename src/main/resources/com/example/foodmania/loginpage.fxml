@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: C8ADAD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foodmania.Mainmenu">
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: C8ADAD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d08f8f" height="103.0" layoutX="-1.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1286.0">
             <effect>
@@ -35,7 +35,7 @@
             </effect>
         </Circle>
         <FontIcon iconLiteral="icm-spoon-knife" iconSize="40" layoutX="29.0" layoutY="69.0" />
-        <Button fx:id="backButton" layoutX="388.0" layoutY="23.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="83.0" styleClass="RedButton" stylesheets="@RedButton.css">
+        <Button fx:id="backButton" layoutX="388.0" layoutY="23.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="83.0" styleClass="RedButton" stylesheets="@CSS/RedButton.css">
             <effect>
                 <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
             </effect>
@@ -102,7 +102,7 @@
                         </Hyperlink>
                      </children>
                   </HBox>
-                  <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="214.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="Login">
+                  <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="214.0" styleClass="FoodButton" stylesheets="@CSS/FoodButton.css" text="Login">
                      <font>
                         <Font name="Perpetua" size="39.0" />
                      </font>

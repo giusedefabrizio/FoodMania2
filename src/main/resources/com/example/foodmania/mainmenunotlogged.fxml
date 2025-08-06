@@ -31,7 +31,7 @@
          </effect>
       </Circle>
       <FontIcon iconLiteral="icm-spoon-knife" iconSize="40" layoutX="29.0" layoutY="69.0" />
-      <Button fx:id="backButton" layoutX="388.0" layoutY="23.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="83.0" styleClass="RedButton" stylesheets="@RedButton.css">
+      <Button fx:id="backButton" layoutX="388.0" layoutY="23.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="83.0" styleClass="RedButton" stylesheets="@CSS/RedButton.css">
          <effect>
             <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
          </effect>
@@ -41,7 +41,7 @@
       </Button>
       <HBox layoutX="875.0" layoutY="12.0" prefHeight="100.0" prefWidth="387.0" spacing="15.0">
          <children>
-            <Button fx:id="loginButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" styleClass="RedButton" stylesheets="@RedButton.css" text="Login">
+            <Button fx:id="loginButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" styleClass="RedButton" stylesheets="@CSS/RedButton.css" text="Login">
                <effect>
                   <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
                </effect>
@@ -49,7 +49,7 @@
                   <Font name="Perpetua Bold" size="38.0" />
                </font>
             </Button>
-            <Button fx:id="registerButton" mnemonicParsing="false" prefHeight="73.0" prefWidth="225.0" styleClass="RedButton" stylesheets="@RedButton.css" text="Register">
+            <Button fx:id="registerButton" mnemonicParsing="false" prefHeight="73.0" prefWidth="225.0" styleClass="RedButton" stylesheets="@CSS/RedButton.css" text="Register">
                <effect>
                   <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
                </effect>
@@ -64,7 +64,7 @@
             <Image url="@../../../UI images/fork.png" />
          </image>
       </ImageView>
-      <Button fx:id="restaurantsButton" layoutX="152.0" layoutY="502.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="291.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="The restaurants">
+      <Button fx:id="restaurantsButton" layoutX="152.0" layoutY="502.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="291.0" styleClass="FoodButton" stylesheets="@CSS/FoodButton.css" text="The restaurants">
          <font>
             <Font name="Perpetua" size="38.0" />
          </font>
@@ -81,7 +81,7 @@
             <Image url="@../../../UI images/spoon.png" />
          </image>
       </ImageView>
-      <Button fx:id="valutatedButton" layoutX="878.0" layoutY="501.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="291.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="Most valutated">
+      <Button fx:id="valutatedButton" layoutX="878.0" layoutY="501.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="291.0" styleClass="FoodButton" stylesheets="@CSS/FoodButton.css" text="Most valutated">
          <font>
             <Font name="Perpetua" size="38.0" />
          </font>
@@ -98,7 +98,7 @@
             <Image url="@../../../UI images/plate.png" />
          </image>
       </ImageView>
-      <Button fx:id="nearestButton" layoutX="508.0" layoutY="500.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="291.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="Nearest to you">
+      <Button fx:id="nearestButton" layoutX="508.0" layoutY="500.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="291.0" styleClass="FoodButton" stylesheets="@CSS/FoodButton.css" text="Nearest to you">
          <font>
             <Font name="Perpetua" size="38.0" />
          </font>

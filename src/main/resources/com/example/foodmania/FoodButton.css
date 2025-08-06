@@ -1,7 +1,0 @@
-.FoodButton {
-  -fx-background-color: #ffdada;
-}
-
-.FoodButton:pressed {
-  -fx-background-color: #f46f6f;
-}

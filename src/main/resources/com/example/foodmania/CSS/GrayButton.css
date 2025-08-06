@@ -1,0 +1,7 @@
+.GrayButton {
+    -fx-background-color: #BCAFAF;
+}
+
+.GrayButton:pressed {
+    -fx-background-color: #6b6b6b;
+}

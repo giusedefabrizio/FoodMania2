@@ -2,9 +2,10 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -16,7 +17,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
-
 
 <AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: C8ADAD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -36,7 +36,7 @@
          </effect>
       </Circle>
       <FontIcon iconLiteral="icm-spoon-knife" iconSize="40" layoutX="29.0" layoutY="69.0" />
-      <Button fx:id="backButton" layoutX="388.0" layoutY="23.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="83.0" styleClass="RedButton" stylesheets="@RedButton.css">
+      <Button fx:id="backButton" layoutX="388.0" layoutY="23.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="83.0" styleClass="RedButton" stylesheets="@CSS/RedButton.css">
          <effect>
             <DropShadow height="1.0" offsetY="2.0" radius="0.0" width="0.0" />
          </effect>
@@ -167,16 +167,19 @@
                   </Text>
                   <HBox layoutX="-3.0" prefHeight="47.0" prefWidth="360.0" spacing="20.0">
                      <children>
-                        <CheckBox mnemonicParsing="false" text="Customer" textOverrun="CLIP">
+                        <RadioButton mnemonicParsing="false" styleClass="RadioButton" stylesheets="@CSS/RadioButton.css" text="Customer" wrapText="true">
                            <font>
-                              <Font name="Perpetua" size="28.0" />
+                              <Font name="Perpetua" size="29.0" />
                            </font>
-                        </CheckBox>
-                        <CheckBox mnemonicParsing="false" text="Owner" textOverrun="CLIP">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="userType" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" styleClass="RadioButton" stylesheets="@CSS/RadioButton.css" text="Owner" toggleGroup="$userType" wrapText="true">
                            <font>
-                              <Font name="Perpetua" size="28.0" />
+                              <Font name="Perpetua" size="29.0" />
                            </font>
-                        </CheckBox>
+                        </RadioButton>
                      </children>
                   </HBox>
                </children>
@@ -186,7 +189,7 @@
             </VBox>
             <HBox alignment="CENTER" layoutY="379.0" prefHeight="180.0" prefWidth="731.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="214.0" styleClass="FoodButton" stylesheets="@FoodButton.css" text="Register" textAlignment="CENTER">
+                  <Button fx:id="registerButton" mnemonicParsing="false" prefHeight="77.0" prefWidth="214.0" styleClass="FoodButton" stylesheets="@CSS/FoodButton.css" text="Register" textAlignment="CENTER">
                      <font>
                         <Font name="Perpetua" size="39.0" />
                      </font>
